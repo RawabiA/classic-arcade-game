@@ -1,3 +1,4 @@
+'use strict';
 // Enemies our player must avoid
 var Enemy = function(x,y) {
     // Variables applied to each of our instances go here,
@@ -58,6 +59,7 @@ Player.prototype.update = function() {
 };
 
 Player.prototype.handleInput = function(keyCode) {
+
 
    if(keyCode == 'left' && this.x > 0) {
         this.x -= 50;
